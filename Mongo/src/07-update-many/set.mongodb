@@ -1,0 +1,35 @@
+use("sample_training")
+
+//Agregar o modificar una propiedad
+/* db.zips.find({city:"CLEVELAND"})
+db.zips.updateMany(
+    {city: "CLEVELAND"},
+    {
+        $set:{
+            myAttribute: "Hola"
+        }
+    }
+) */
+
+//Cambiar de nombre la propiedad
+/* db.zips.updateMany(
+    {city: "CLEVELAND"},
+    {
+        $rename:{
+            myAttribute: "myData"
+        }
+    }
+) */
+
+
+//Quitar una propiedad
+/* db.zips.updateMany(
+    { 
+        city: "CLEVELAND" 
+    },
+    {
+        $unset: {
+            myAttr: ""
+        }
+    }
+) */

@@ -1,0 +1,10 @@
+use("sample_training")
+
+// 1 = organizar de forma ascendente
+// -1 = organanizar de forma descendente
+db.zips.find({
+    pop:{$gte: 100}
+})
+.sort({pop: -1})
+.limit(3)
+.skip()

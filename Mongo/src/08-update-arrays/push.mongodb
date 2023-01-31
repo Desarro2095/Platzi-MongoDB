@@ -1,0 +1,11 @@
+use("platzi_store")
+
+//push solo funciona con arrays
+db.inventory.updateOne(
+    {_id: 4},
+    {
+        $push: {
+            tags: "headphone"
+        }
+    }
+)
