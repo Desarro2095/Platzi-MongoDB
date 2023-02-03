@@ -1,0 +1,35 @@
+use("platzi_store")
+
+/* db.users.insertOne({
+    email: 'carlosp.2095@gmail.com',
+    password: 'Mako2022',
+    role: 'admin',
+    social_accounts: ['facebook'],
+    address:{
+        street: "Calle 45 - 55",
+        city: "Bogota",
+        zip: "11001"
+    },
+    shipping_address:{
+        street: "Calle 32 - 10",
+        city: "Bogota",
+        zip: "11002"
+    }
+}) */
+
+db.users.insertOne({
+    email: 'mako.1195@gmail.com',
+    password: 'Mako2022',
+    role: 'admin',
+    social_accounts: ['twiter'],
+    address:{
+        street: "Carrera 15 - 25",
+        city: "Bogota",
+        zip: "11001"
+    },
+    shipping_address:{
+        street: "Calle 32 - 10",
+        city: "Bogota",
+        zip: "11002"
+    }
+})
