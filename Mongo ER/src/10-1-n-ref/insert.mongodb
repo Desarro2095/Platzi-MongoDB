@@ -1,7 +1,9 @@
 use("platzi_store")
 
+db.orders.drop()
+
 /* db.orders.insertOne({
-    user_id: ObjectId("63dc580a01324d8c53036be4"),
+    user_id: ObjectId("63e19e5ee1ab88a9c27df52a"),
     date: "2020-12-12",
     items:[{
         name: "Camiseta",
@@ -15,8 +17,10 @@ use("platzi_store")
     }]
 }) */
 
+
+
 db.orders.insertOne({
-    user_id: ObjectId("63dc585096642494d4d101e7"),
+    user_id: ObjectId("63e19e92d72e219726627d77"),
     date: "2020-12-12",
     items:[{
         name: "Hueso comestible",

@@ -1,0 +1,18 @@
+use("platzi_store")
+
+//db.products.find()
+//db.stores.find()
+
+//63db0cd98d059ac196674e2b producto
+//63dc5b22ec0eaa38296deb41 store
+
+db.products.aggregate({
+  $lookup: {
+    from: "stores",
+    localField: "store_ids",
+    foreignField: "_id",
+    as: "stores"
+  }
+})
+
+

@@ -1,0 +1,11 @@
+use("platzi_store")
+
+db.orders.insertOne({
+    user_id: ObjectId("63e19e92d72e219726627d77"),
+    date: "2020-12-12",
+    total: 0,
+    items:[]
+})
+
+
+
